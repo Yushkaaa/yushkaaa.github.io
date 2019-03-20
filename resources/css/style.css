@@ -1,0 +1,441 @@
+/* Styles */
+html {
+  font-family: 'Arial', serif;
+  font-size: 16px;
+  background-color: white;
+
+}
+
+body {
+  line-height: 1.4rem;
+}
+
+
+.flex{
+  display:flex;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  color: #3F3F3F;
+}
+
+h3 {
+
+  font-weight: bold;
+  line-height: 1rem;
+  color: #3F3F3F;
+}
+
+h4 {
+  color: #3F3F3F;
+}
+
+p{
+  color: #3F3F3F;
+}
+a {
+  color: #525996;
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  align-items: center;
+  background-color: white;
+  color: #5F5F63;
+}
+
+ header span {
+  font-size: 1.5rem;
+}
+.logo{
+  padding-left: 1.5rem;
+}
+
+ em {
+  font-weight: bold;
+  color: black;
+}
+
+ nav {
+  justify-content: space-between;
+  width: 100%;
+}
+
+ nav div {
+  display: flex;
+  align-items: center;
+}
+
+ ul {
+  margin-right: 1.5rem;
+}
+
+ ul li {
+  display: inline;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: font-size linear 200ms;
+}
+
+ ul li:hover {
+  font-size: 1.25rem;
+}
+
+
+/*mobile version*/
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo,
+  .menu {
+    display: none;
+  }
+  header img {
+    padding-left: 0;
+  }
+  .mobile {
+    width: 100%;
+    display: inline-flex;
+    flex: 1;
+    justify-content: space-around;
+  }
+
+
+}
+
+/*Main section*/
+
+.main{
+  padding-top: 4rem;
+  background-color: #F7F7F7;
+  display:flex;
+  width: 100%;
+}
+
+.banner{
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.banner img{
+  width: 100%;
+}
+
+.banner-content{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.banner-content h1,
+h3,
+button {
+  width: 80%;
+  line-height: 2rem;
+  padding: 0.5rem 0;
+}
+
+button {
+  background-color: #8C8C8C;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+    background-color:#7F7F7F ;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+
+  /*mobile version*/
+
+  @media only screen and (max-width: 600px){
+    .main {
+      flex-direction: column;
+      padding: 0;
+      width: 100%;
+    }
+    .banner{
+      padding: 0;
+      width: 100%;
+    }
+    .banner-content {
+      width: 100%;
+      padding: 2rem 1rem;
+    }
+  
+    button{
+      padding-top: 1.5rem;
+    }
+  }
+
+  /*Second Section*/
+
+.second-section {
+  background-color: white;
+  display:flex;
+  width: 100%;
+  }
+.banner-2 {
+  width: 60%;
+  padding: 2rem 1.5rem;
+  }
+.banner-2 img{
+  width: 100%;
+}
+
+.second-section .banner-2 h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+.second-section .info h3 {
+  color: black;
+}
+
+.second-section p{
+  color: #606060;
+}
+
+.information {
+  display: inline;
+  padding-top: 1rem;
+  width: 40%;
+    }
+
+.info {
+  display: flex;
+  width: 100%;
+
+  transition: background-color 200ms linear;
+}
+
+.info:hover {
+  background-color:	#F7F7F7;
+}
+
+.image-container {
+  flex: 3.5;
+  line-height: 0;
+  padding: 1rem;
+}
+
+.image-container img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  flex: 6.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+.details h4{
+  padding-bottom: 0.5rem;
+}
+
+/*mobile version*/
+
+@media only screen and (max-width: 600px) {
+  .second-section .information {
+    width: 100%;
+  }
+  .banner-2{
+    display: none;
+  }
+  .desktop{
+    display: none;
+  }
+  .second-section {
+    padding-bottom: 0;
+    padding: 2rem 1rem
+  }
+
+  .info {
+    display: block;
+
+  }
+
+  .information {
+    padding-top: 0;
+  }
+}
+
+/* Third Section */
+
+.courses{
+  background-color: #F7F7F7;
+  width: 100%;
+}
+
+.title {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.course {
+  width: 25%;
+  margin: 1rem;
+  background-color: white;
+  color: #606060;
+  transition: background-color 200ms linear,
+    font-size;
+}
+
+.course:hover {
+  background-color: #D4D4D4	;
+}
+
+.course h3 {
+  font-weight: 200;
+}
+
+.image img {
+  width: 100%;
+}
+
+/*mobile version*/
+
+@media only screen and (max-width: 600px) {
+  .courses {
+    background-color: white;
+  }
+
+  .course {
+    display: none;
+
+  }
+  .courses .mobile {
+    display: block;
+  }
+
+  .mobile .details {
+    background-color: #EAEAEA	;
+    color: #5E5E5E;
+    padding: 1rem;
+    margin: 0.5rem;
+    transition: background-color 200ms linear;
+  }
+
+  .mobile .details:hover {
+    background-color: #CFCFCF;
+  }
+
+  .mobile .details h3 {
+    padding: 0;
+  }
+}
+
+
+/*Fourth section*/
+
+.video-section{
+  width: 60%;
+  padding: 1rem 1.5rem;
+}
+
+.information-4 {
+  display: inline;
+  width: 40%;
+    }
+
+.info-4 {
+  display: flex;
+  width: 100%;
+
+  transition: background-color 200ms linear;
+}
+
+.info-4:hover {
+  background-color:	#F7F7F7;
+}
+
+.image-container-4 {
+  flex: 3.5;
+  line-height: 0;
+  padding: 1rem;
+}
+
+.image-container-4 img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+.details-4 {
+  flex: 6.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+.details-4 h4{
+  padding-bottom: 0.5rem;
+}
+/*mobile version*/
+@media only screen and (max-width: 600px) {
+  .thesis .video-section{
+    width: 100%;
+  }
+
+  video {
+    padding-bottom: 1.5rem;
+  }
+  .desktop {
+    display: none;
+  }
+}
+/* Footer */
+
+footer {
+  background-color: white;
+}
+
+footer nav {
+  justify-content: space-between;
+}
+
+footer nav h4 {
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+}
+.menu ul li{
+  color: #3F3F3F;
+}
+
+@media only screen and (max-width: 600px) {
+  footer h4 {
+    padding: 1rem;
+  }
+
+}
