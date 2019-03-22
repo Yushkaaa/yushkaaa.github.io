@@ -1,6 +1,6 @@
 /* Styles */
 html {
-  font-family: 'Arial', serif;
+  font-family: 'Calibri', serif;
   font-size: 16px;
   background-color: white;
 
@@ -16,21 +16,22 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.2rem;
   color: #3F3F3F;
 }
 
 h3 {
-
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight:500;
   line-height: 1rem;
   color: #3F3F3F;
 }
 
 h4 {
   color: #3F3F3F;
+  font-size: 1rem;
 }
 
 p{
@@ -47,7 +48,7 @@ header {
   height: 4rem;
   width: 100%;
   z-index: 1;
-  position: fixed;
+  position: relative;
   align-items: center;
   background-color: white;
   color: #5F5F63;
@@ -96,21 +97,42 @@ header {
 .mobile {
   display: none;
 }
+.mobile-menu {
+  display: none;
+}
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 590px) {
   .logo,
   .menu {
     display: none;
   }
-  header img {
-    padding-left: 0;
-  }
+
   .mobile {
-    width: 100%;
     display: inline-flex;
     flex: 1;
     justify-content: space-around;
   }
+
+  .mobile-menu {
+    display: flex;
+    width: 100%;
+  }
+
+  .mobile-menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-right: 0rem;
+  }
+
+  .mobile-menu ul li{
+    text-align: center;
+  }
+
+  .mobile-menu ul li a img {
+    max-height: 27px;
+    width: 27px;
+}
 
 
 }
@@ -118,8 +140,7 @@ header {
 /*Main section*/
 
 .main{
-  padding-top: 4rem;
-  background-color: #F7F7F7;
+  background-color: #dbdbdb;
   display:flex;
   width: 100%;
 }
@@ -131,6 +152,8 @@ header {
 
 .banner img{
   width: 100%;
+  object-fit: cover;
+  justify-content: center;
 }
 
 .banner-content{
@@ -150,11 +173,13 @@ button {
 }
 
 button {
-  background-color: #8C8C8C;
+  background-color: #4a4a4a;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 1rem;
   font-weight: bold;
+  color: white;
+  border: none;
 }
 
 button:hover {
@@ -165,24 +190,43 @@ button:hover {
 
   /*mobile version*/
 
-  @media only screen and (max-width: 600px){
+@media only screen and (max-width: 590px){
+
     .main {
       flex-direction: column;
-      padding: 0;
       width: 100%;
     }
+
+    button{
+      background-color: #8C8C8C;
+    }
+
     .banner{
       padding: 0;
       width: 100%;
-    }
+      }
+
     .banner-content {
       width: 100%;
-      padding: 2rem 1rem;
+      padding: 2rem 0rem;
     }
-  
-    button{
-      padding-top: 1.5rem;
+
+    .banner-content h1, h3, button{
+      width: 100%;
     }
+
+    .inner-text{
+      padding: 0rem 1rem;
+    }
+
+    .inner-text > * {
+      width: 100%;
+    }
+
+    .banner img{
+      max-height: 250px;
+    }
+
   }
 
   /*Second Section*/
@@ -212,6 +256,7 @@ button:hover {
 
 .second-section p{
   color: #606060;
+
 }
 
 .information {
@@ -223,7 +268,6 @@ button:hover {
 .info {
   display: flex;
   width: 100%;
-
   transition: background-color 200ms linear;
 }
 
@@ -248,8 +292,8 @@ video {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 1rem;
   padding-bottom: 1.5rem;
+  padding-left: 1rem;
 }
 .details h4{
   padding-bottom: 0.5rem;
@@ -257,7 +301,7 @@ video {
 
 /*mobile version*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 590px) {
   .second-section .information {
     width: 100%;
   }
@@ -269,7 +313,7 @@ video {
   }
   .second-section {
     padding-bottom: 0;
-    padding: 2rem 1rem
+    padding: 2rem 0
   }
 
   .info {
@@ -279,6 +323,10 @@ video {
 
   .information {
     padding-top: 0;
+  }
+
+  .details{
+    padding-left: 1.5rem;
   }
 }
 
@@ -312,12 +360,10 @@ video {
 }
 
 .course:hover {
-  background-color: #D4D4D4	;
+  background-color: #CFCFCF	;
 }
 
-.course h3 {
-  font-weight: 200;
-}
+
 
 .image img {
   width: 100%;
@@ -325,9 +371,13 @@ video {
 
 /*mobile version*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 590px) {
   .courses {
     background-color: white;
+    padding-bottom: 2rem;
+    border-top-style: solid;
+    border-top-width: thin;
+    border-top-color: #E8E8E8;
   }
 
   .course {
@@ -339,7 +389,7 @@ video {
   }
 
   .mobile .details {
-    background-color: #EAEAEA	;
+    background-color: #d8d8d8	;
     color: #5E5E5E;
     padding: 1rem;
     margin: 0.5rem;
@@ -362,6 +412,9 @@ video {
   width: 60%;
   padding: 1rem 1.5rem;
 }
+.video-section p{
+  padding-bottom:  2rem;
+}
 
 .information-4 {
   display: inline;
@@ -371,7 +424,6 @@ video {
 .info-4 {
   display: flex;
   width: 100%;
-
   transition: background-color 200ms linear;
 }
 
@@ -402,10 +454,12 @@ video {
 .details-4 h4{
   padding-bottom: 0.5rem;
 }
+
 /*mobile version*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 590px) {
   .thesis .video-section{
     width: 100%;
+    padding: 0;
   }
 
   video {
@@ -417,25 +471,30 @@ video {
 }
 /* Footer */
 
-footer {
-  background-color: white;
-}
-
-footer nav {
+footer{
+  border-top-style: solid;
+  border-top-width: thin;
+  border-top-color: #E8E8E8;
+  padding-top:1rem;
+  padding-left:1.5rem;
+  padding-bottom:3rem;
+  display:flex;
   justify-content: space-between;
 }
 
-footer nav h4 {
-  padding-left: 1.5rem;
-  padding-top: 1rem;
-}
 .menu ul li{
   color: #3F3F3F;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 590px) {
+
+  footer{
+    border: none;
+    padding: 0;
+  }
   footer h4 {
-    padding: 1rem;
+    padding: 0.7rem;
+    font-size: 0.8rem;
   }
 
 }
