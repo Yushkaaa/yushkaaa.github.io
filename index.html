@@ -1,273 +1,199 @@
 <!DOCTYPE html>
-
-<html>
-
-  <head>
-    <title>Colmar Academy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="resources/css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css"/>
-    <link rel="icon" href="./resources/images/favicon.ico" type="image/x-icon">
-  </head>
-
-  <body>
-    <!-- Header Section -->
-    <header>
-      <nav class="flex">
-        <div class="logo">
-          <img src="./resources/images/ic-logo.svg" alt="logo">
-          <span><em>COLMAR</em>ACADEMY</span>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width" name="viewport">
+  <title>Ekaterina Portfolio Site</title>
+  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Custom stylesheet -->
+  <link href="resources/css/custom.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <!-- Header with navbar -->
+  <header>
+    <!-- Navbar with dropdown menu -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Alexis Web Development</a>
         </div>
-        <div class="menu">
-          <ul>
-            <li><a href="#">On campus</a></li>
-            <li><a href="#">Online</a></li>
-            <li><a href="#">For companies</a></li>
-            <li><a href="#">Sing in</a></li>
-          </ul>
-        </div>
-        <div class="mobile-menu">
-          <ul>
-            <li><a href="#"><img src="./resources/images/ic-logo.svg" alt="logo"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="campus"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-online.svg" alt="online"></a></li>
-            <li><a href="#"><img src="./resources/images/ic-login.svg" alt="login"></a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
 
-    <!-- Main section-->
-    <div class="main">
-      <div class="banner">
-          <img src="./resources/images/banner.jpg" alt="banner">
+        <!-- Dropdown Menu -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Jumbotron -->
+    <section class="jumbotron">
+      <div class="fluid-container text-center">
+        <h1>Ekaterina: Web Developer</h1>
+        <p>Web developer with a passion for creating beautiful, responsive websites.</p><br>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
       </div>
+    </section>
 
-      <div class="banner-content">
-        <div class="inner-text">
-          <h1>Learn something new everyday</h1>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-          <button>Start Here</button>
-        </div>
-      </div>
-    </div>
+    <!-- Skills section: 3 columns with icons -->
+    <section id="skills">
+      <div class="container">
+        <!-- Skills heading -->
+        <h1 class="text-center sect-title">Technical Skills</h1>
 
-    <!-- Second Section -->
-
-    <div class="second-section">
-      <div class="banner-2">
-        <img src="./resources/images/information-main.jpg" alt="student">
-        <h3>It doesnt hurt to keep practicing.</h3>
-        <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non
-          accumsan
-          urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-          <br>
-
-        <p>Emanuel, Sr Strategist at Hiring.com</p>
-      </div>
-
-
-      <div class="information">
-
-        <div class="info">
-          <div class="image-container">
-            <img class="desktop" src="./resources/images/information-orientation.jpg" alt="orientation">
-            <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="orientation">
+        <!-- 1x3 Bootstrap grid of skills with icons -->
+        <div class="row">
+          <!-- Frontend Column -->
+          <div class="col-sm-4 skill text-center">
+            <span aria-hidden="true" class="fa fa-photo fa-5x"></span>
+            <h3>Frontend</h3>
+            <p>Bootstrap</p>
+            <p>Sass</p>
+            <p>CSS3</p>
           </div>
-          <div class="details">
-            <h3>Orientation Date</h3>
-            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-            <a href="#">Read More</a>
+
+          <!-- Backend Column -->
+          <div class="col-sm-4 skill text-center">
+            <span aria-hidden="true" class="fa fa-cog fa-5x"></span>
+            <h3>Backend</h3>
+            <p>SQL</p>
+            <p>MongoDB</p>
+            <p>Express.js</p>
           </div>
-       </div>
 
-       <div class="info">
-         <div class="image-container">
-           <img class="desktop" src="./resources/images/information-campus.jpg" alt="campus">
-           <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="campus">
-         </div>
-         <div class="details">
-           <h3>Our campus</h3>
-           <p>Find which campus is close by you</p>
-           <a href="#">Read More</a>
-         </div>
-       </div>
-
-       <div class="info">
-         <div class="image-container">
-           <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="guest">
-           <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="guest">
-         </div>
-         <div class="details">
-           <h3>Our Guest lecture</h3>
-           <p>Join a keynote with Oliver Sack about treatment</p>
-           <a href="#">Read More</a>
-         </div>
-       </div>
-      </div>
-    </div>
-
-
-    <!-- Third Section -->
-
-    <div class="courses">
-
-      <h1 class="title">Start learning</h1>
-
-      <div class="course-list desktop">
-
-        <div class="course">
-        <div class="image">
-          <img src="./resources/images/course-software.jpg" alt="software">
-        </div>
-        <div class="details">
-          <h3>Software engineering</h3>
-          <h3>COURSES</h3>
-            <h4>Web Development, Mobile Development, iOT, APIs</h4>
-        </div>
-      </div>
-
-      <div class="course">
-        <div class="image">
-          <img src="./resources/images/course-computer-art.jpg" alt="computer">
-        </div>
-        <div class="details">
-          <h3>Computer Art</h3>
-          <h3>COURSES</h3>
-            <h4>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h4>
-        </div>
-      </div>
-
-      <div class="course">
-        <div class="image">
-          <img src="./resources/images/course-design.jpg" alt="camera">
-        </div>
-        <div class="details">
-          <h3>Design</h3>
-          <h3>COURSES</h3>
-            <h4>User Experience Design, User Research, Visual Design</h4>
-        </div>
-      </div>
-
-      <div class="course">
-        <div class="image">
-          <img src="./resources/images/course-data.jpg" alt="data">
-        </div>
-        <div class="details">
-          <h3>Data</h3>
-          <h3>COURSES</h3>
-            <h4>Data Science, Big Data, SQL, Data Visualization</h4>
-        </div>
-      </div>
-
-      <div class="course">
-        <div class="image">
-          <img src="./resources/images/course-business.jpg" alt="chessboard">
-        </div>
-        <div class="details">
-          <h3>Business</h3>
-          <h3>COURSES</h3>
-            <h4>Product Development, Business Development, Startup</h4>
-        </div>
-      </div>
-
-      <div class="course">
-        <div class="image">
-          <img src="./resources/images/course-marketing.jpg" alt="watch">
-        </div>
-        <div class="details">
-          <h3>Marketing</h3>
-          <h3>COURSES</h3>
-            <h4>Analytics, Content Marketing, Mobile Marketing</h4>
-        </div>
-      </div>
-
-    </div>
-
-    <!--mobile version-->
-
-    <div class="mobile">
-      <div class="details">
-        <h3>Software engineering</h3>
-      </div>
-      <div class="details">
-        <h3>Computer Art</h3>
-      </div>
-      <div class="details">
-        <h3>Design</h3>
-      </div>
-      <div class="details">
-        <h3>Data</h3>
-      </div>
-      <div class="details">
-        <h3>Business</h3>
-      </div>
-      <div class="details">
-        <h3>Marketing</h3>
-      </div>
-    </div>
-  </div>
-
-  <!--Fourth section-->
-
-  <div class="thesis">
-    <h1 class="title">Thesis exhibit</h1>
-
-    <div class="flex">
-      <div class="video-section">
-        <video src="./resources/videos/thesis.mp4" autoplay muted poster="./resources/images/player.png">Your browser doesn't support our videoplayer</video>
-        <h3 class="desktop">Reimagine urban</h3>
-        <p class="desktop">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed
-          non accumsan
-          urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
-        </p>
-      </div>
-
-      <div class=" information-4 desktop">
-
-        <div class="info-4">
-          <div class="image-container-4">
-            <img src="./resources/images/thesis-fisma.jpg" alt="fisma">
-          </div>
-          <div class="details-4">
-            <h3>Fisma: Design and Prototype</h3>
-            <h4>Designer showcase of new prototype product</h4>
+          <!-- Design Column -->
+          <div class="col-sm-4 skill text-center">
+            <span aria-hidden="true" class="fa fa-pencil fa-5x"></span>
+            <h3>Design</h3>
+            <p>Photoshop</p>
+            <p>Illustrator</p>
+            <p>InDesign</p>
           </div>
         </div>
-
-        <div class="info-4">
-          <div class="image-container-4">
-            <img src="./resources/images/thesis-now-and-then.jpg" alt="city">
-          </div>
-          <div class="details-4">
-            <h3>Now and then</h3>
-            <h4>Research study about New York</h4>
-          </div>
-        </div>
-
       </div>
+    </section>
 
-    </div>
-  </div>
+    <!-- Portfolio: 3x3 Grid with responsive images -->
+    <section id="portfolio">
+      <div class="fluid-container">
+        <h1 class="text-center sect-title">Portfolio</h1>
+        <!-- Row 1 -->
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-sm-4">
+            <img class="img-responsive" src="resources/images/adhoc.jpeg">
+            <h4 class="text-center"><a href="resources/website/Adhoc/index.html">Adhoc</a></h4>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-sm-4">
+            <img class="img-responsive" src="resources/images/ColmarAcademy.jpeg">
+            <h4 class="text-center"><a href="resources/website/ColmarAcademy/index.html">ColmarAcademy</a></h4>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-sm-4">
+            <img class="img-responsive" src="resources/images/jumpstart.jpeg">
+            <h4 class="text-center"><a href="resources/website/Excursion/jumpstart.html">Colmar</a></h4>
+          </div>
 
-
-    <!-- Footer -->
-    <footer>
-      <nav class="flex">
-        <div>
-          <h4>&copy; 2016 Colmar Academy. All right reserved</h4>
         </div>
-        <div class="menu">
-          <ul>
-            <li>Terms</li>
-            <li>Privacy</li>
-          </ul>
+        <!-- Row 2 -->
+        <div class="row">
+          <!-- Project 4 -->
+          <div class="col-sm-4">
+            <img class="img-responsive" src="resources/images/SecretAgentSupply.jpeg">
+            <h4 class="text-center"><a href="resources/website/SecretAgentSupply/index.html">Secret Agent Supply</a></h4>
+          </div>
+          <!-- Project 5 -->
+          <div class="col-sm-4">
+            <img class="img-responsive" src="resources/images/Excursion.jpeg">
+            <h4 class="text-center"><a href="resources/website/Excursion/index.html">Excursion</a></h4>
+          </div>
+          <!-- Project 6 -->
+          <div class="col-sm-4">
+            <img class="img-responsive" src="resources/images/Tea Cozy.jpeg">
+            <h4 class="text-center"><a href="resources/website/Tea Cozy/index.html">Tea Cozy</a></h4>
+          </div>
         </div>
-      </nav>
-    </footer>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="fluid-container">
+        <!-- Contact Heading -->
+        <h1 class="text-center">Contact</h1>
+
+        <!-- 1x3 Bootstrap grid for contact icons, with multiple column sizes for different breakpoints -->
+        <div class="row">
+          <!-- Twitter Column-->
+          <div class="col-sm-6 col-lg-3">
+            <div class="contact text-center">
+              <a href="#" >
+                <span aria-hidden="true" class="fa fa-twitter fa-5x text-center"></span>
+              </a>
+            </div>
+          </div>
 
 
-  </body>
+          <!-- GitHub Column -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="contact text-center">
+              <a href="https://github.com/Yushkaaa" >
+                <span aria-hidden="true" class="fa fa-github fa-5x text-center"></span>
+              </a>
+            </div>
+          </div>
 
+          <!-- Email Column-->
+          <div class="col-sm-6 col-lg-3">
+            <div class="contact text-center">
+              <a href="mailto:yushkaaa@icloud.com#" >
+                <span aria-hidden="true" class="fa fa-envelope fa-5x" ></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- LinkedIn Column-->
+          <div class="col-lg-3">
+            <div class="contact text-center">
+              <a href="https://www.linkedin.com/in/ekaterina-yush-395040146/" >
+                <span aria-hidden="true" class="fa fa-linkedin fa-5x" ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-right">Copyright &copy; 2019 Ekaterina. All rights reserved.</footer>
+
+  <!-- Latest compiled and minified jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified Bootstrap JavaScript for plugins-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
 
 </html>
